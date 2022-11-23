@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../imgs/topbar_logo.png";
-import placeholder from '../placeholder.png';
+import placeholder from "../placeholder.png";
 
 const LoggedOutView = () => {
   return (
@@ -38,15 +38,19 @@ const LoggedInView = (props) => {
 
       <li className="nav-item">
         <Link to={`/@${props.currentUser.username}`} className="nav-link">
-          {props.currentUser.image ? <img
-            src={props.currentUser.image}
-            className="user-pic pr-1"
-            alt={props.currentUser.username}
-          /> : <img
-          src={placeholder}
-          className="user-pic pr-1"
-          alt={props.currentUser.username}
-        />}
+          {props.currentUser.image ? (
+            <img
+              src={props.currentUser.image}
+              className="user-pic pr-1"
+              alt={props.currentUser.username}
+            />
+          ) : (
+            <img
+              src={placeholder}
+              className="user-pic pr-1"
+              alt={props.currentUser.username}
+            />
+          )}
           {props.currentUser.username}
         </Link>
       </li>
