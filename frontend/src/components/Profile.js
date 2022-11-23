@@ -139,7 +139,7 @@ class Profile extends React.Component {
               <img
                 src={placeholder}
                 className="user-img"
-                alt={profile.username}
+                alt={placeholder}
               />}
               <h4 className="py-2">{profile.username}</h4>
               <p>{profile.bio}</p>
