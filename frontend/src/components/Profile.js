@@ -129,18 +129,13 @@ class Profile extends React.Component {
         <div className="container">
           <div className="row p-4 text-center">
             <div className="user-info col-xs-12 col-md-8 offset-md-2">
-              {profile.image ? 
+              
               <img
                 src={profile.image}
                 className="user-img"
                 alt={profile.username}
               /> 
-              : 
-              <img
-                src={placeholder}
-                className="user-img"
-                alt={placeholder}
-              />}
+              
               <h4 className="py-2">{profile.username}</h4>
               <p>{profile.bio}</p>
 
